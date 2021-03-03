@@ -1,22 +1,15 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from "react";
+import Layout from '../components/layout/Layout';
 
 // markup
 const IndexPage = () => {
   return (
-    <main>
-      <title>Home Page</title>
-      <h1>
-        Congratulations
-        <br />
-        <span>— you just made a Gatsby site! </span>
-        <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
-        </span>
-      </h1>
-        <p>Hi there, my name is Gedalya!</p>
-        <Link to="/about">About</Link>
-    </main>
+      <>
+          <Layout pageTitle='Home Page'>
+              <p>Hi there, my name is Gedalya!</p>
+          </Layout>
+
+      </>
   )
 }
 
